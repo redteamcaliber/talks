@@ -8,12 +8,12 @@
     <meta name="venue" content="{{ page.venue }}" />
 
     {% if site.standalone == true %}
-    <link rel="stylesheet" type="text/css" href="/css/slippy.css" />
-    <link rel="stylesheet" type="text/css" href="/css/slippy-pure.css" />
-    <link rel="stylesheet" type="text/css" href="/css/highlight.css" />
-    <script type="text/javascript" src="/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.history.js"></script>
-    <script type="text/javascript" src="/js/slippy.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ site.root }}/css/slippy.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.root }}/css/slippy-pure.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.root }}/css/highlight.css" />
+    <script type="text/javascript" src="{{ site.root }}/js/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.root }}/js/jquery.history.js"></script>
+    <script type="text/javascript" src="{{ site.root }}/js/slippy.js"></script>
     {% else %}
     <link rel="stylesheet" type="text/css" href="http://ronin-ruby.github.com/talks/css/slippy.css" />
     <link rel="stylesheet" type="text/css" href="http://ronin-ruby.github.com/talks/css/slippy-pure.css" />
