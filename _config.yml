@@ -1,5 +1,5 @@
 auto: true
-server: true
+server: 2222
 markdown: rdiscount
 pygments: true
 
