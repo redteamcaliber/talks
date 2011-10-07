@@ -35,26 +35,6 @@
     </style>
     <script type="text/javascript">
       $(function() {
-        var $slides = $("#slides");
-        var $currentSlide = null;
-
-        function newSlide() {
-          $currentSlide = $('<div class="slide"></div>')
-          $currentSlide.appendTo($slides);
-        }
-
-        newSlide();
-
-        $("#content > *").remove().each(function() {
-          if ($(this).is('hr')) {
-            newSlide();
-          }
-          else
-          {
-            $currentSlide.append(this);
-          }
-        });
-
         // settings go here
         // possible values are:
         //  - animLen, duration for default animations (0 = disabled)
@@ -73,11 +53,9 @@
   </head>
 
   <body>
-    <div id="content">
+    <div id="slides">
       {{ content }}
     </div>
-
-    <div id="slides"></div>
 
     <div class="layout" data-name="default">
       <content></content>
